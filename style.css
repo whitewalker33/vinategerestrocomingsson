@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhai|Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  position: relative;
+  transition: all 1s linear;
+
+}
+
+
+.first {
+  clip-path: polygon(0 0, 60% 0, 40% 100%, 0% 100%);
+  width: 100%;
+  background-image: linear-gradient(#0e1328, #4b3434);
+  position: relative;
+  height: 100vh !important;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  padding: 5rem;
+
+}
+
+.first .title h1 {
+  color: #d81f26;
+  font-family: "Pacifico", cursive;
+  line-height: 8rem;
+  letter-spacing: 1.5rem;
+}
+
+.first .title p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5rem;
+}
+
+
+.second {
+  /* clip-path: polygon(60% 0, 100% 0%, 100% 100%, 40% 100%); */
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50%;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+
+}
+
+.second h3 {
+  color: #d81f26;
+  text-transform: capitalize;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 3px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+
+.second p {
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+}
+
+.second p.query {
+  font-family: "Anton", sans-serif;
+}
+
+
+
+
+.social {
+  display: flex;
+  min-height: 15vh;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.5em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 1.5rem;
+  margin-left: 5rem;
+}
+
+.social a {
+  margin: auto;
+  color: white;
+  padding: 0.5em;
+  width: 2.5em;
+  height: 1.5rem;
+}
+
+.social a:hover {
+  color: #c2c7cc;
+}
