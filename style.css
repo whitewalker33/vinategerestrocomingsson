@@ -8,12 +8,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   transition: all 1s linear;
 
 }
-
 
 .first {
   clip-path: polygon(0 0, 60% 0, 40% 100%, 0% 100%);
@@ -25,7 +24,6 @@ body {
   left: 0;
   z-index: 11;
   padding: 5rem;
-
 }
 
 .first .title h1 {
@@ -41,10 +39,8 @@ body {
   letter-spacing: 0.5rem;
 }
 
-
 .second {
   /* clip-path: polygon(60% 0, 100% 0%, 100% 100%, 40% 100%); */
-  overflow: hidden;
   position: absolute;
   top: 0;
   right: 0;
@@ -56,7 +52,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 5rem;
-
 }
 
 .second h3 {
@@ -67,8 +62,8 @@ body {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
-
 
 .second p {
   text-align: justify;
@@ -78,9 +73,6 @@ body {
 .second p.query {
   font-family: "Anton", sans-serif;
 }
-
-
-
 
 .social {
   display: flex;
@@ -105,4 +97,42 @@ body {
 
 .social a:hover {
   color: #c2c7cc;
+}
+
+@media screen and (max-width: 600px) {
+
+  body {
+    min-height: 100vh;
+
+  }
+
+  .social {
+    margin-left: 2.5rem;
+  }
+
+  .first {
+    display: block;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    width: 100%;
+    background-image: linear-gradient(#0e1328, #4b3434);
+    min-height: 100vh !important;
+    z-index: 11;
+    padding: 2rem;
+  }
+
+  .first .title h1 {
+    color: #d81f26;
+    font-family: "Pacifico", cursive;
+    line-height: 6rem;
+    letter-spacing: 1rem;
+  }
+
+  .second {
+    display: inline-block;
+    z-index: 15;
+    margin-top: 100vh;
+    min-height: 100vh !important;
+    width: 100%;
+    padding: 5rem;
+  }
 }
